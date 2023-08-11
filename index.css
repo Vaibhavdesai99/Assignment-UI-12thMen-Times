@@ -73,8 +73,8 @@ select {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  height: 23rem;
-  width: 60rem;
+  height: 25rem;
+  width: 68rem;
   margin: 0 auto;
 }
 
@@ -82,7 +82,7 @@ select {
   width: 40%;
   padding: 10px;
   box-sizing: border-box;
-  border: 2px solid black;
+  border: 2px solid rgb(79, 113, 226);
   border-radius: 10px;
 }
 
@@ -117,4 +117,9 @@ select {
 .wrap-img-content-inOneLine p {
   flex: 3; /* Allow the text to expand to fill available space */
   margin: 0 12px; /* Remove default margin */
+}
+
+.boxButton {
+  position: relative;
+  margin-top: 2rem;
 }
