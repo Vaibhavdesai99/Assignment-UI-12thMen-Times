@@ -33,7 +33,7 @@ select {
 }
 /* Style for the Sign Up button */
 .signup-button {
-  background-color: #007bff;
+  background-color: #333ac0;
   color: white;
   border: none;
   padding: 5px 8px;
@@ -122,4 +122,12 @@ select {
 .boxButton {
   position: relative;
   margin-top: 2rem;
+}
+
+.btnn {
+  background-color: rgb(116, 35, 196);
+  padding: 0.3rem 5rem;
+  color: white;
+  border-radius: 10px;
+  border: none;
 }
