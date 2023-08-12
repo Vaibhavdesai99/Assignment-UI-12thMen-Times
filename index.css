@@ -151,6 +151,23 @@ select {
   margin-bottom: 0px;
 }
 
+/* Added hover effcts  on card */
+.box1:hover,
+.box2:hover,
+.box3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Added effect on Button when hover get bit bigger than original */
+.boxButton button.btnn:hover {
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.05);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
 /* Added media-query for responsive */
 /* For Mobile devices  */
 @media (min-width: 319px) and (max-width: 480px) {
