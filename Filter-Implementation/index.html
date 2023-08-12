@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter-JavaScript-Feature</title>
+</head>
+
+<body>
+    <h1>Product Filter</h1>
+
+    <!-- Filter the option based on criteria -->
+
+    <label for="category"> Category </label>
+    <select id="cateogory">
+        <option value="All">All Products</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Home">Home & Kitchen</option>
+        <option value="Books">Books</option>
+        <option value="Toys & Games"> Toys & Games</option>
+    </select>
+
+
+    <!-- Label for Date -->
+    <label for="Date">Date : </label>
+    <input type="date" id="date" />
+
+    <!-- Checking availability of products in array -->
+
+    <label for="available">Available Products</label>
+    <input type="checkbox" id="available" />
+    <!-- To display filtered items -->
+
+    <ul id="itemList"></ul>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
