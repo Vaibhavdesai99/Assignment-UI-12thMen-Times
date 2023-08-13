@@ -170,10 +170,50 @@ select {
 
 /* Added media-query for responsive */
 /* For Mobile devices  */
-@media (min-width: 319px) and (max-width: 480px) {
-  .grid {
-    display: inline-block;
+@media (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-section {
+    margin: 3rem 0;
+    width: 84%;
     margin: auto;
+    margin-top: 5rem;
+  }
+
+  .grid {
+    width: 100%;
+    margin: 0;
+    gap: 20px;
+    margin-top: 3rem;
+  }
+
+  .g-col-6 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .features {
+    position: relative;
+    top: 47rem;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .left-nav {
+    margin-left: -5rem;
   }
 
   li,
@@ -181,36 +221,11 @@ select {
     display: none;
   }
 
-  .box1,
-  .box2,
-  .box3 {
-    width: calc(66% - 324px);
-    margin: 0 auto;
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    height: 27rem;
+  a,
+  header {
+    margin-top: 4rem;
   }
 
-  .features {
-    width: 147%;
-    /* position: static; */
-    /* margin-top: 3rem; */
-    position: absolute;
-    top: 124rem;
-    left: 22rem;
-    margin: auto;
-  }
-  .para {
-    width: 151%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 22rem;
-  }
-
-  .left-nav {
-    margin-left: 25rem;
-  }
   .right-nav {
     display: none;
   }
@@ -299,3 +314,5 @@ select {
     left: 8rem;
   }
 }
+
+/* ----------------------------------------------------------- */
