@@ -60,14 +60,30 @@ label {
 }
 
 select {
+  cursor: pointer;
   padding: 5px 33px;
   margin-left: 1rem;
   margin-right: 1rem;
   border: 2px solid red;
   border-radius: 6px;
+  font-size: revert;
+  font-weight: bold;
+  color: red;
+  transition: border-color 0.3s ease-in-out;
 }
 
 input[type="checkbox"] {
   margin-left: 10px;
   accent-color: red;
+  cursor: pointer;
+}
+
+header:hover {
+  background: darkgray;
+}
+
+#productTable tr:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05); /* Add a zoom effect */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
