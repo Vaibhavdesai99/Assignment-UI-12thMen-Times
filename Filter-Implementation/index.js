@@ -71,16 +71,18 @@ function FilterApplyOnProducts() {
 
 // Function to display products to show on UI :-
 function displayproducts(DisplayTheProductsOnUI) {
-  productList.innerHTML = ""; //This work for clearing the already existing products
+  const tbody = document.getElementById("productList"); // Get the tbody element
+  tbody.innerHTML = ""; // Clear previous rows
 
   DisplayTheProductsOnUI.forEach((product) => {
-    const li = document.createElement("li");
-    li.textContent = `${product.name} - Category : ${
-      product.category
-    } - Price: $${product.price.toFixed(2)} - Available : ${
-      product.available ? "Yes" : "No"
-    }`;
-    productList.appendChild(li);
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+    <td>${product.name}</td>
+    <td>${product.category}</td>
+    <td>$${product.price.toFixed(2)}</td>
+    <td>${product.available ? "Yes" : "No"}</td>
+  `;
+    tbody.appendChild(tr);
   });
 }
 
